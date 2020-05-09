@@ -1,0 +1,83 @@
+$font_color: green;
+
+h1, p {
+  color: $font_color;
+  font-weight: bold;
+  text-align: left;
+}
+
+body {
+  background-color: lightblue;
+}
+
+#images-index {
+  background-color: yellow;
+  padding: 10px;
+}
+
+.images {
+  border: 10px;
+  border-color: lightgreen;
+}
+
+p.description {
+  font-style: italic;
+}
+
+@media (max-width: 499px) {
+body {
+    background-color: lightgreen;
+}
+}
+
+@media (min-width: 500px) {
+body {
+    background-color: yellow;
+}
+}
+
+nav a {
+  color: $font_color;
+}
+
+nav {
+  background-color: lightgreen;
+}
+
+div {
+  background-color: lightgreen;
+  p {
+    color: $font_color;
+    font-family: monaco;
+  }
+}
+
+%headings {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.amazon {
+  @extend %headings;
+  font-family: Courier, arial;
+}
+
+.mountains {
+  @extend %headings;
+  font-family: sans-serif, arial;
+}
+
+.coast {
+  @extend %headings;
+  font-family: calibri, arial;
+}
+
+.galapagos {
+  @extend %headings;
+  font-family: times, arial;
+}
+
+.poll {
+  @extend %headings;
+  font-family: tahoma, arial;
+}
